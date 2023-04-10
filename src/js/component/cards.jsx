@@ -3,7 +3,7 @@ import React from "react";
 //create your first component
 const Card = (props) => {
 	return (
-		<div className="card h-75">
+		<div className="card h-125">
 			<img className="card-img-top" src={props.image} alt="Card image" />
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>

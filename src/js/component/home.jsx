@@ -1,8 +1,8 @@
 import React from "react";
 import NavBar from "./nav.jsx";
-import Card from "/workspace/Landing-Page-/src/js/component/cards.jsx";
-import Jumbo from "/workspace/Landing-Page-/src/js/component/jumbo.jsx"
-import Footer from "/workspace/Landing-Page-/src/js/component/footer.jsx"
+import Card from "./cards.jsx";
+import Jumbo from "./jumbo.jsx"
+import Footer from "./footer.jsx"
 
 
 //create your first component
@@ -10,22 +10,22 @@ const Home = () => {
 	return (
 		<div className="text-center">
 			<NavBar />
-			<div className="m-auto" style={{ "max-width": "" }}>
+			<div className="m-auto" style={{ "max-width": "1500px" }}>
 				<div>
 					<Jumbo/>
 				</div>
 				<div className="row row-cols-1 row-cols-md-4 g-4">
 					<div className="col">
-						<Card image="" title="This is a title" text="Working" label="Awesome" />
+						<Card image="https://avatars.sched.co/2/79/5574049/avatar.jpg.320x320px.jpg?ed0" title="4Geeks is awesome" text="Time to code!" label="Awesome" />
 					</div>
 					<div className="col">
-						<Card image="" title="This is a title" text="Working" label="Awesome" />
+						<Card image="https://storage.googleapis.com/replit/images/1511936948186_53605a1f8e2f117b874504a42b735a7f.png" title="4Geeks is awesome" text="Time for class!" label="Awesome" />
 					</div>
 					<div className="col">
-						<Card image="" title="This is a title" text="Working" label="Awesome" />
+						<Card image="data:image/png;base64,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" title="4Geeks is awesome" text="Just too cool!" label="Awesome" />
 					</div>
 					<div className="col">
-						<Card image="" title="This is a title" text="Working" label="Awesome" />
+						<Card image="https://multimedia.infojobs.net/api/v1/tenants/c7e2b9c1-8480-43b0-ad9e-000c17aa2cbb/domains/718302b6-5343-43d3-a8a3-829dc3da0893/buckets/6f3ab1cc-5920-4f4e-b131-46a4587a0e1f/images/d1/d1fab91c-8d90-4688-bcff-fb50b5efae5c?jwt=eyJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODI1NzU3NzcsInJxcyI6IkdFVFxcL3RlbmFudHMvYzdlMmI5YzEtODQ4MC00M2IwLWFkOWUtMDAwYzE3YWEyY2JiL2RvbWFpbnMvNzE4MzAyYjYtNTM0My00M2QzLWE4YTMtODI5ZGMzZGEwODkzL2J1Y2tldHMvNmYzYWIxY2MtNTkyMC00ZjRlLWIxMzEtNDZhNDU4N2EwZTFmL2ltYWdlcy9kMS9kMWZhYjkxYy04ZDkwLTQ2ODgtYmNmZi1mYjUwYjVlZmFlNWMiLCJtZXRhZGF0YSI6eyJydWxlIjp7InZlcnNpb24iOiIyMDE2LTEwIiwiYWN0aW9ucyI6W119fX0.nN1QzaIY6-kRR9mxMhN5qrygP9QALQykS4Sv_x1k6oAMj5qaP0_sl8z8wYKI539bdHQjPYu47TC5PDkzZpUKThbM901TRk3tSmsYq67c1-zxBt3tc3kd7vyUG8ODZm14lZ7CQw1UJ411j3DdnzdKuMObbFs-510VvJIqri_7YeLFgtWMMiE59QQ28QPo8eXoco6ndj38jbPp2CchAOtDXMYWuUqazRdiVS7VT9yO41WfnDy36ThW0ClGKQYbmGlAOrcisbqKlm3O4S692VxbIMiZZIxtS3CVqDGlMpGSe5d25Tq01nCYiQJoHU_54Z8vY7zAGTghLJUJTwSYmAEhcA&AccessKeyId=d724d9a53d95a810" title="4Geeks is awesome" text="Great place to learn coding!" label="Awesome" />
 					</div>
 				</div>
 			</div>
